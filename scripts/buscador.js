@@ -30,20 +30,23 @@ document.addEventListener("keyup", e => {
 const btn_lupa = document.querySelector('#icon-lupa');
 const buscador_input = document.querySelector('#buscador');
 const titleApp = document.querySelector('#title-app');
+const compartirApp = document.querySelector('#a-share');
 
 btn_lupa.addEventListener('click', () => {
   if (buscador_input.style.display == 'none') {
     buscador_input.style.display = "block";
-    btn_lupa.src = "https://i.postimg.cc/K85Bvdcn/circulo-cruzado.png";
+    btn_lupa.src = "https://i.postimg.cc/TPG54Pt0/IMG-9875.png";
     btn_lupa.style.width = "25px";
     btn_lupa.style.height = "25px";
     titleApp.style.display = "none";
+    compartirApp.style.display= "none";
   } else {
     buscador_input.style.display = "none";
     btn_lupa.src = "https://i.postimg.cc/RZp7MS8t/IMG-9056.png"
     titleApp.style.display = "inline";
     btn_lupa.style.width = "25px";
     btn_lupa.style.height = "25px";
+    compartirApp.style.display = "block";
   }
 });
 const botonesDescargar = document.querySelectorAll('.svg-download');
