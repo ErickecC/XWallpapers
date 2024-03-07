@@ -1,4 +1,3 @@
-
 document.addEventListener("keyup", e => {
   if (e.target.matches("#buscador")) {
     const buscarTermino = e.target.value.replace(/[^\w-]/g, "").toLowerCase();
